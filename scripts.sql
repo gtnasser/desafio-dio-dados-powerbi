@@ -1,39 +1,4 @@
-=== doc desafio de projeto
-
-dotnet --list-sdks
-
-dotnet --list-sdks
-
-
-Pessoal reorganizei o código da professora agora tudo está ok, vou enviar aqui para ajudar quem estiver com dúvida:
-
- [System.Data.Common.DbProviderFactories]::GetFactoryClasses()|ogv
- 
-https://dev.mysql.com/downloads/connector/net/
-
-
--
-
-https://www.db4free.net/
-instance: desafiodio
-u/p: udesafiodio/pdesafiodio
-
-https://www.db4free.net/phpMyAdmin/index.php?route=/
-
----
-
-create schema if not exists azure_company;
-use azure_company;
-
-select * from information_schema.table_constraints
-where constraint_schema = 'azure_company';
-
-
 use desafiodio;
-
-
-
-use anaconda;
 
 CREATE TABLE employee(
 Fname varchar(15) not null,
@@ -111,17 +76,4 @@ insert into project values ('ProductX', 1, 'Bellaire', 5), ('ProductY', 2, 'Suga
 insert into works_on values (123456789, 1, 32.5), (123456789, 2, 7.5), (666884444, 3, 40.0), (453453453, 1, 20.0), (453453453, 2, 20.0), (333445555, 2, 10.0), (333445555, 3, 10.0), (333445555, 10, 10.0), (333445555, 20, 10.0), (999887777, 30, 30.0), (999887777, 10, 10.0), (987987987, 10, 35.0), (987987987, 30, 5.0), (987654321, 30, 20.0), (987654321, 20, 15.0), (888665555, 20, 0.0);
 
 
-
----
-
-
-
-
-use anaconda;
-drop table departament;
-drop table employee;
-
-private static final String URL = "jdbc:mysql://db4free.net:3306/texian";
-private static final String USER = "meubanco";
-private static final String PASS = "minha senha";
 
